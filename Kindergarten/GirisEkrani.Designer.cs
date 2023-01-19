@@ -31,8 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GirisEkrani));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.BtnVeliGiris = new System.Windows.Forms.Button();
+            this.BtnPersonelGiris = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -58,25 +58,27 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Cloffy Kindergarten";
             // 
-            // button1
+            // BtnVeliGiris
             // 
-            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.Location = new System.Drawing.Point(18, 229);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(200, 150);
-            this.button1.TabIndex = 2;
-            this.button1.UseVisualStyleBackColor = true;
+            this.BtnVeliGiris.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnVeliGiris.BackgroundImage")));
+            this.BtnVeliGiris.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnVeliGiris.Location = new System.Drawing.Point(18, 229);
+            this.BtnVeliGiris.Name = "BtnVeliGiris";
+            this.BtnVeliGiris.Size = new System.Drawing.Size(200, 150);
+            this.BtnVeliGiris.TabIndex = 2;
+            this.BtnVeliGiris.UseVisualStyleBackColor = true;
+            this.BtnVeliGiris.Click += new System.EventHandler(this.BtnVeliGiris_Click);
             // 
-            // button2
+            // BtnPersonelGiris
             // 
-            this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button2.Location = new System.Drawing.Point(256, 229);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(200, 150);
-            this.button2.TabIndex = 3;
-            this.button2.UseVisualStyleBackColor = true;
+            this.BtnPersonelGiris.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnPersonelGiris.BackgroundImage")));
+            this.BtnPersonelGiris.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnPersonelGiris.Location = new System.Drawing.Point(256, 229);
+            this.BtnPersonelGiris.Name = "BtnPersonelGiris";
+            this.BtnPersonelGiris.Size = new System.Drawing.Size(200, 150);
+            this.BtnPersonelGiris.TabIndex = 3;
+            this.BtnPersonelGiris.UseVisualStyleBackColor = true;
+            this.BtnPersonelGiris.Click += new System.EventHandler(this.BtnPersonelGiris_Click);
             // 
             // label2
             // 
@@ -102,14 +104,17 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(484, 445);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.BtnPersonelGiris);
+            this.Controls.Add(this.BtnVeliGiris);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "GirisEkrani";
             this.Text = "GirisEkrani";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -122,8 +127,8 @@
 
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button BtnVeliGiris;
+        private System.Windows.Forms.Button BtnPersonelGiris;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
     }

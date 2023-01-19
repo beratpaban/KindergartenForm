@@ -10,11 +10,18 @@ using System.Windows.Forms;
 
 namespace Kindergarten
 {
-    public partial class BilgiDuzenle : Form
+    public partial class SilinmisVeriler : Form
     {
-        public BilgiDuzenle()
+        public SilinmisVeriler()
         {
             InitializeComponent();
+        }
+
+        private void SilinmisVeriler_Load(object sender, EventArgs e)
+        {
+            
+            this.silinmisTableAdapter.Fill(this.kindergartenDataSet8.silinmis);
+
         }
     }
 }

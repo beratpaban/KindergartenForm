@@ -11,7 +11,9 @@ namespace Kindergarten
     {
         public SqlConnection baglanti()
         {
-            SqlConnection baglan = new SqlConnection();
+            SqlConnection baglan = new SqlConnection("Data Source=ALX\\ALXSERVER;Initial Catalog=Kindergarten;Integrated Security=True");
+            baglan.Open();
+            return baglan;
         }
     }
 }

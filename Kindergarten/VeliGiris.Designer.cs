@@ -28,30 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VeliGiris));
+            this.BtnVeliGiris = new System.Windows.Forms.Button();
+            this.MskSifre = new System.Windows.Forms.MaskedTextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+            this.MskTcNo = new System.Windows.Forms.MaskedTextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // button1
+            // BtnVeliGiris
             // 
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold);
-            this.button1.Location = new System.Drawing.Point(167, 317);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(127, 37);
-            this.button1.TabIndex = 11;
-            this.button1.Text = "Giriş Yap";
-            this.button1.UseVisualStyleBackColor = true;
+            this.BtnVeliGiris.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold);
+            this.BtnVeliGiris.Location = new System.Drawing.Point(167, 317);
+            this.BtnVeliGiris.Name = "BtnVeliGiris";
+            this.BtnVeliGiris.Size = new System.Drawing.Size(127, 37);
+            this.BtnVeliGiris.TabIndex = 11;
+            this.BtnVeliGiris.Text = "Giriş Yap";
+            this.BtnVeliGiris.UseVisualStyleBackColor = true;
+            this.BtnVeliGiris.Click += new System.EventHandler(this.BtnVeliGiris_Click);
             // 
-            // maskedTextBox2
+            // MskSifre
             // 
-            this.maskedTextBox2.Location = new System.Drawing.Point(156, 269);
-            this.maskedTextBox2.Name = "maskedTextBox2";
-            this.maskedTextBox2.Size = new System.Drawing.Size(150, 20);
-            this.maskedTextBox2.TabIndex = 10;
+            this.MskSifre.Location = new System.Drawing.Point(156, 269);
+            this.MskSifre.Name = "MskSifre";
+            this.MskSifre.Size = new System.Drawing.Size(150, 20);
+            this.MskSifre.TabIndex = 10;
+            this.MskSifre.UseSystemPasswordChar = true;
             // 
             // label3
             // 
@@ -63,13 +66,13 @@
             this.label3.TabIndex = 9;
             this.label3.Text = "Şifre:";
             // 
-            // maskedTextBox1
+            // MskTcNo
             // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(156, 176);
-            this.maskedTextBox1.Mask = "00000000000";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(150, 20);
-            this.maskedTextBox1.TabIndex = 8;
+            this.MskTcNo.Location = new System.Drawing.Point(156, 176);
+            this.MskTcNo.Mask = "00000000000";
+            this.MskTcNo.Name = "MskTcNo";
+            this.MskTcNo.Size = new System.Drawing.Size(150, 20);
+            this.MskTcNo.TabIndex = 8;
             // 
             // label2
             // 
@@ -95,13 +98,17 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(484, 461);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.maskedTextBox2);
+            this.Controls.Add(this.BtnVeliGiris);
+            this.Controls.Add(this.MskSifre);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.maskedTextBox1);
+            this.Controls.Add(this.MskTcNo);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "VeliGiris";
             this.Text = "VeliGiris";
             this.ResumeLayout(false);
@@ -111,10 +118,10 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox2;
+        private System.Windows.Forms.Button BtnVeliGiris;
+        private System.Windows.Forms.MaskedTextBox MskSifre;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
+        private System.Windows.Forms.MaskedTextBox MskTcNo;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
     }

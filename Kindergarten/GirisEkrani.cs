@@ -16,5 +16,20 @@ namespace Kindergarten
         {
             InitializeComponent();
         }
+
+        private void BtnVeliGiris_Click(object sender, EventArgs e)
+        {
+            VeliGiris vg=new VeliGiris();
+            vg.Show();
+            this.Hide();
+        }
+
+        private void BtnPersonelGiris_Click(object sender, EventArgs e)
+        {
+
+            PersonelGiris pg=new PersonelGiris();
+            pg.Show();
+            this.Hide();
+        }
     }
 }
